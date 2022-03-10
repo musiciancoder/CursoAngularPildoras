@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "primeraApp"
+    }
+  },
+  "defaultProject": "primeraApp",
+  "cli": {
+    "analytics": false
+  }
 }
