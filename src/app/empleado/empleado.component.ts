@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
 
 @Component({
   selector: 'app-empleado',
@@ -8,6 +9,20 @@ import { Component, OnInit } from '@angular/core';
   //styles:["p{background-color:red;"]
 })
 export class EmpleadoComponent implements OnInit {
+
+  nombre="Juan";
+
+  apellido="Diaz";
+
+  edad=8;
+
+  private sueldo=1600000;
+
+  getSueldo(){
+    return this.edad;
+  }
+
+  empresa="Pildoras informaticas"
 
   constructor() { }
 
