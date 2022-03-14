@@ -1,0 +1,1 @@
+Primero el servidor carga el archivo index.html que cargará el componente raíz <app-root>, es decir app.component.html

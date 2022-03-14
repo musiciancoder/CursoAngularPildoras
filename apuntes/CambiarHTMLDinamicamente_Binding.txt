@@ -1,0 +1,4 @@
+En html:
+Registrado:<input type="checkbox" id="registro" [checked]="usuRegistrado"/>
+En ts:
+    usuRegistrado:boolean=false;

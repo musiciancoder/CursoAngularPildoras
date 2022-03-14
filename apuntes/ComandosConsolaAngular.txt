@@ -1,0 +1,9 @@
+ver version node: node -v
+ver version npm: npm -v
+ver version angular: ng --version
+cambiar politica de scripts (viene por defecto deshabilitada): https://www.cdmon.com/es/blog/la-ejecucion-de-scripts-esta-deshabilitada-en-este-sistema-te-contamos-como-actuar
+iniciar un proyecto angular ng new nombreProyecto
+levantar proyecto: (desde carpeta nombreProyecto) ng serve --open, luego escribir localhost:4200 en el navegador
+tambien se puede vevantar con comando npm: npm start
+detener servidor:(desde carpeta nombreProyecto) ctrl + c
+

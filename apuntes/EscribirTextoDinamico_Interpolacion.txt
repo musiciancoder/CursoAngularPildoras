@@ -1,0 +1,8 @@
+En html:
+Introduce el nombre de la empresa:<input type="text" #empresa>
+<input type="button" value="dale!" (click)="llamarEmpresa(empresa.value)"/>
+En ts:
+
+  llamarEmpresa(value:String):String{
+    return value;
+  }
