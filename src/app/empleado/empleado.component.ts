@@ -22,7 +22,14 @@ export class EmpleadoComponent implements OnInit {
     return this.edad;
   }
 
-  empresa="Pildoras informaticas"
+  empresa="Pildoras informaticas";
+
+  llamarEmpresa(value:String):String{
+    return value;
+  }
+
+  
+
 
   constructor() { }
 
