@@ -16,19 +16,13 @@ export class EmpleadoComponent implements OnInit {
 
   edad=8;
 
-  private sueldo=1600000;
+  habilitacionCuadro:boolean=false;
 
-  getSueldo(){
-    return this.edad;
+  usuRegistrado:boolean=false;
+
+  getRegistroUsuario(){
+    this.usuRegistrado=true;
   }
-
-  empresa="Pildoras informaticas";
-
-  llamarEmpresa(value:String):String{
-    return value;
-  }
-
-  
 
 
   constructor() { }
