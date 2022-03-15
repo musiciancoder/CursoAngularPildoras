@@ -20,8 +20,26 @@ export class EmpleadoComponent implements OnInit {
 
   usuRegistrado:boolean=false;
 
+  textoDeRegistro:String="No hay nadie registrado";
+
   getRegistroUsuario(){
-    this.usuRegistrado=true;
+    this.usuRegistrado=false;
+  }
+  myHTMLInputElement:HTMLInputElement;
+
+  setUsuarioRegistrado(event:Event){
+    // alert("El usuario se acaba de registrar");
+   // this.textoDeRegistro="El usuario se acaba de registrar";
+/*     alert("tipo de event.target: "+typeof(event.target) + "; " + "event.target: " +event.target + "; event:" +event +"; tipo de textoDeRegistro: "+typeof(this.textoDeRegistro)
+    +"; tipo de myHTMLInputElement: "+typeof(this.myHTMLInputElement) +"; tipo de <HTMLInputElement>event.target: "+typeof(<HTMLInputElement>event.target)
+    +"; tipo de <HTMLInputElement>event.target.value: "+typeof((<HTMLInputElement>event.target)).value
+    +"; tipo de <HTMLInputElement>event.target: "+typeof((<HTMLInputElement>event.target)
+    +"; <HTMLInputElement>event.target2: "+<HTMLInputElement>event.target)
+    ); */
+    if((<HTMLInputElement>event.target).value=="sí"){
+      this.textoDeRegistro="El usuario se acaba de registrar";
+    }else{this.textoDeRegistro="No hay nadie registrado";}
+
   }
 
 
