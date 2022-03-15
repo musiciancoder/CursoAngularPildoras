@@ -1,0 +1,4 @@
+En html:
+ Introduce el nombre de la empresa:<input type="text" [(ngModel)]="empresa">
+En ts:
+  empresa:String="Google";

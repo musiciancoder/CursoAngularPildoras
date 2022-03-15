@@ -16,6 +16,12 @@ export class EmpleadoComponent implements OnInit {
 
   edad=8;
 
+  empresa:String="Google";
+
+/*   cambiarEmpresa(event:Event){
+    this.empresa= (<HTMLInputElement>event.target).value
+  } */
+
   habilitacionCuadro:boolean=false;
 
   usuRegistrado:boolean=false;
